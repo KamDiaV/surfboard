@@ -409,6 +409,9 @@ image {
 .interactive-avatar--active {
   border-color: #FEDB3F;
 }
+.interactive-avatar:hover {
+  border-color: #FEDB3F;
+}
 
 .interactive-avatar__link {
   position: absolute;
