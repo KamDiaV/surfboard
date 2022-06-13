@@ -1,22 +1,35 @@
-.block {
-  height: 100px;
-  border: 1px solid black;
+$containerWidth: 940px; //ширина контейнера 
+$baseFontSize: 18px; //основной размер шрифта 
 
-  &__one {
-    width: 100px;
-    height: 50px;
-    background: red;
-  
-    &:hover {
-      background: blue;
-    }
-  
-    &:after {
-      content: 'я элемент афтер';
-    }
-  
-    & + .block__one {
-      background: blue;
-    }
-  } 
-}
+//colors
+$yellow: #FEDB3F;
+$yellowHover: #FFD517;
+$black: #292929;
+$body: #666666;
+
+//z-index
+$z-fixed-menu: 100;
+
+//normalize
+@import url('./normalize.css');
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import './_base.scss';
+
+//components
+@import './blocks/_hero.scss';
+@import './blocks/_header.scss';
+@import './blocks/_features.scss';
+@import './blocks/feature';
+@import './blocks/btn';
+@import './blocks/section';
+@import './blocks/headline';
+@import './blocks/benefits';
+@import './blocks/benefit';
+@import './blocks/reviews';
+@import './blocks/interactive-avatar';
+@import './blocks/order';
+@import './blocks/form';
+@import './blocks/radio';
+@import './blocks/fixed-menu';
