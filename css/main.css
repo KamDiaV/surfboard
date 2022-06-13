@@ -76,7 +76,7 @@ image {
 }
 
 .hero {
-  background: url(../../img/bg-1.jpg) center 0 no-repeat;
+  background: url(../img/bg-1.jpg) center 0 no-repeat;
   height: 100vh;
   min-height: 650px;
   color: #fff;
@@ -282,7 +282,7 @@ image {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/dots.svg");
+  content: url("../img/dots.svg");
   position: absolute;
   top: 60px;
   right: 0;
@@ -427,7 +427,7 @@ image {
 }
 
 .order-section {
-  background: url(../../img/bg-order.jpg) center 0 no-repeat;
+  background: url(../img/bg-order.jpg) center 0 no-repeat;
   background-size: contain;
   height: 100vh;
   min-height: 650px;
