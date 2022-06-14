@@ -76,10 +76,8 @@ image {
 }
 
 .hero {
-  background: url(../img/bg-1.jpg) center 0 no-repeat;
-  background-size: contain;
-  height: 100vh;
-  min-height: 650px;
+  background: url(../img/bg-1.jpg) no-repeat;
+  background-size: cover;
   color: #fff;
 }
 
@@ -237,13 +235,6 @@ image {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.section--font--color--white {
-  color: #fff;
-}
-.section--font--color--white .section__title {
-  color: inherit;
-  margin-bottom: 50px;
 }
 
 .section__title {
@@ -430,11 +421,14 @@ image {
      object-fit: cover;
 }
 
-.order-section {
-  background: url(../img/bg-order.jpg) center 0 no-repeat;
-  background-size: contain;
-  height: 100vh;
-  min-height: 650px;
+.order {
+  background: url(../img/bg-order.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.order .section__title {
+  color: inherit;
+  margin-bottom: 50px;
 }
 
 .form {

@@ -1,6 +1,10 @@
-.order-section {
-  background: url(../img/bg-order.jpg) center 0 no-repeat;
-  background-size: contain;
-  height: 100vh;
-  min-height: 650px;
+.order {
+  background: url(../img/bg-order.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .section__title {
+    color: inherit;
+    margin-bottom: 50px;
+  }
 }
