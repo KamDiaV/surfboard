@@ -237,27 +237,22 @@ image {
           justify-content: center;
 }
 
+.section__headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .section__title {
   font-size: 48px;
   font-weight: bold;
   color: #292929;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.headline {
-  text-align: center;
-}
-
-.headline__title {
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.headline__subtitle {
+.section__subtitle {
   padding: 0 27%;
-  margin-bottom: 45px;
 }
 
 .benefits {
@@ -334,9 +329,6 @@ image {
   background: #F8FAF9;
   padding: 42px;
   margin-bottom: 15px;
-}
-
-.reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,37 +337,37 @@ image {
           align-items: center;
 }
 
-.reviews__avatar {
+.reviews__display-avatar {
   width: 253px;
   height: 264px;
 }
 
-.reviews__avatar-img {
+.reviews__display-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.reviews__content {
+.reviews__display-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: 40px;
 }
 
-.reviews__title {
+.reviews__display-title {
   font-weight: bold;
   font-size: 27px;
   margin-bottom: 14px;
   color: #292929;
 }
 
-.reviews__text {
+.reviews__display-text {
   margin-bottom: 25px;
 }
 
-.reviews__author {
+.reviews__display-author {
   font-weight: 500;
   color: #292929;
 }
