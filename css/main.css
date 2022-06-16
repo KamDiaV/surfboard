@@ -334,9 +334,6 @@ image {
   background: #F8FAF9;
   padding: 42px;
   margin-bottom: 15px;
-}
-
-.reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
