@@ -253,6 +253,7 @@ image {
 
 .section__subtitle {
   padding: 0 27%;
+  padding-bottom: 20px;
 }
 
 .benefits {
