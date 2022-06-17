@@ -6,34 +6,34 @@
   align-items: center;
 }
 
-.reviews__display-avatar {
+.reviews__avatar {
   width: 253px;
   height: 264px;
 }
 
-.reviews__display-img {
+.reviews__img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.reviews__display-content {
+.reviews__desc {
   flex: 1;
   margin-left: 40px;
 }
 
-.reviews__display-title {
+.reviews__title {
   font-weight: bold;
   font-size: 27px;
   margin-bottom: 14px;
   color: $black;
 }
 
-.reviews__display-text {
+.reviews__text {
   margin-bottom: 25px;
 }
 
-.reviews__display-author {
+.reviews__author {
   font-weight: 500;
   color: $black;
 }
