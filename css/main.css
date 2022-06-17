@@ -343,7 +343,7 @@ image {
   height: 264px;
 }
 
-.reviews__img {
+.reviews__avatar-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
