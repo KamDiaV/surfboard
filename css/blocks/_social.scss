@@ -1,0 +1,19 @@
+.social__list{
+  display: flex;
+}
+
+.social__links {
+  display: inline-block;
+  width: rem(20px);
+  height:rem(20px);
+  margin-right: rem(14px);
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #292929;
+  }
+}
+
+.social__list:last-child{
+  margin-right: 0px;
+}

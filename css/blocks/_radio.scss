@@ -2,17 +2,21 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: rem(20px);
+  margin-bottom: rem(20px);
 
   &--checkbox {
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
+
+    @include tablets {
+      margin-bottom: rem(40px);
+    }
 
     .radio__visible {
       border-radius: 15%;
       
       &:before {
-        background: url("../img/checkmark.png") center center no-repeat;
+        background: url("../img/checkmark.svg") center center no-repeat;
       }
     }
   }
@@ -29,17 +33,17 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: $yellow;
     border-radius: 50%;
     position: absolute;

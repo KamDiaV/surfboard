@@ -3,8 +3,16 @@
   background-size: cover;
   color: #fff;
 
+  @include tablets {
+    background: url(../img/bg-order-768.jpg) no-repeat;
+  }
+
   .section__title {
     color: inherit;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
+
+    @include tablets {
+      margin-bottom: rem(28px);
+    }
   }
 }

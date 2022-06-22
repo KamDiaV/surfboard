@@ -1,5 +1,15 @@
+// .benefits {
+//   @include phones {
+//     margin-bottom: 200px;
+//   }
+// }
+
 .benefits__list {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -7,12 +17,21 @@
   padding: 0 2%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(28px);
+  }
+
   &:before {
     content: url('../img/dots.svg');
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
   }
 
   &:first-child {
