@@ -29,6 +29,16 @@
     font-size: rem(40px);
     margin-bottom: 0;
   }
+
+  &--products {
+    font-size: rem(36px);
+    text-align: left;
+
+    @include tablets {
+      text-align: center;
+      font-size: rem(30px);
+    }
+  }
 }
 
 .section__subtitle {
@@ -37,5 +47,15 @@
 
   @include phones {
     padding: 0 3%;
+  }
+
+  &--products {
+    text-align: left;
+    padding: 0 4% 0 0;
+
+    @include tablets {
+      text-align: center;
+      padding: 0 4% 0 0;
+    }
   }
 }

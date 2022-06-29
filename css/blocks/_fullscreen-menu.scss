@@ -1,0 +1,13 @@
+.fullscreen-menu {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.menu__list--vertical .menu__item {
+  @include tablets {
+    display: flex;
+  }
+}
