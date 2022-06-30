@@ -206,6 +206,11 @@ image {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu--vertical {
+    display: block;
+  }
+}
 
 .menu__list {
   display: -webkit-box;
@@ -220,6 +225,14 @@ image {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .menu__list--vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .menu__item {
   margin-right: 1.2222222222rem;
@@ -228,11 +241,25 @@ image {
 .menu__item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .menu__item--vertical {
+    margin-bottom: 2.7777777778rem;
+    margin-right: 0;
+  }
+  .menu__item--vertical:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .menu__link {
   text-decoration: none;
   font-weight: bold;
   white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .menu__link--vertical {
+    font-weight: 400;
+  }
 }
 
 .phone-number {
@@ -952,43 +979,16 @@ image {
   background-color: #F8FAF9;
 }
 
-.products__arrows {
-  position: absolute;
+.products__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 49.4444444444rem;
-  height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .products__arrows {
-    width: 34.0555555556rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .products__arrows {
-    width: 24.4444444444rem;
-  }
-}
-
-.arrow-left {
-  margin-left: -4.4444444444rem;
-}
-@media screen and (max-width: 768px) {
-  .arrow-left {
-    margin-left: 5.5555555556rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .arrow-left {
-    margin-left: 0rem;
-  }
 }
 
 .product__img {
@@ -1196,16 +1196,20 @@ image {
 }
 @media screen and (max-width: 768px) {
   .fullscreen-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative;
+    display: block;
+    background-color: #333537;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 135px 258px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .menu__list--vertical .menu__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.fullscreen-menu__img {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  width: 20px;
+  height: 20px;
 }

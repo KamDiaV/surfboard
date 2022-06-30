@@ -2,12 +2,21 @@
   display: none;
 
   @include tablets {
-    display: flex;
+    position: relative;
+    display: block;
+    background-color: #333537;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 135px 258px;
   }
 }
 
-.menu__list--vertical .menu__item {
-  @include tablets {
-    display: flex;
-  }
+.fullscreen-menu__img {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  width: 20px;
+  height: 20px;
 }
+
